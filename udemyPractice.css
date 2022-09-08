@@ -22,7 +22,7 @@
     height: 75vh;
     transition: all ease-in 0.5s;
     /* z-index: -1; */
-    /* opacity: 0; */
+    opacity: 0;
     /* transition: all ease-in 0.5s; */
 }
 
@@ -79,7 +79,15 @@ video {
     /* transition: all ease-in 0.5s; */
 }
 
+audio {
+    width: 75vw;
+    height: 75vh;
+}
 
+.audio {
+    position: absolute;
+    top : 65px;
+}
 
 iframe {
     width: 75vw;
@@ -112,6 +120,15 @@ iframe {
     z-index: 10;
 }
 
+#fourth:target {
+    opacity: 1;
+    position: absolute;
+    left: 0;
+    width: 75%;
+    height: 75%;
+    z-index: 10;
+}
+
 #first:target h1 {
     opacity: 0;
     animation: 2s fadeIn forwards 0.5s;
@@ -123,6 +140,11 @@ iframe {
 }
 
 #thrid:target h1 {
+    opacity: 0;
+    animation: 2s fadeIn forwards 0.5s;
+}
+
+#fourth:target h1 {
     opacity: 0;
     animation: 2s fadeIn forwards 0.5s;
 }
