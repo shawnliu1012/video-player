@@ -20,6 +20,7 @@
     background-color: #000;
     width: 75vw;
     height: 75vh;
+    transition: all ease-in 0.5s;
     /* z-index: -1; */
     /* opacity: 0; */
     /* transition: all ease-in 0.5s; */
@@ -75,13 +76,14 @@ a {
 video {
     position: absolute;
     /* opacity: 0; */
-    transition: all ease-in 0.5s;
+    /* transition: all ease-in 0.5s; */
 }
 
-source {
-    /* color: #000;
-    font-size: 50px; */
-    opacity: 0;
+
+
+iframe {
+    width: 75vw;
+    height: 75vh;
 }
 
 #first:target {
@@ -101,12 +103,26 @@ source {
     height: 75%;
 }
 
+#thrid:target {
+    opacity: 1;
+    position: absolute;
+    left: 0;
+    width: 75%;
+    height: 75%;
+    z-index: 10;
+}
+
 #first:target h1 {
     opacity: 0;
     animation: 2s fadeIn forwards 0.5s;
 }
 
 #second:target h1 {
+    opacity: 0;
+    animation: 2s fadeIn forwards 0.5s;
+}
+
+#thrid:target h1 {
     opacity: 0;
     animation: 2s fadeIn forwards 0.5s;
 }
